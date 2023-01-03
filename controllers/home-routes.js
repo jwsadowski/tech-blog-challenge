@@ -5,7 +5,7 @@ const { Post } = require('../models')
 router.get('/', async (req, res) => {
     try {
         const Post = await Post.findAll({
-            
+            res.remder
         });
 
 
@@ -42,6 +42,14 @@ router.get('/dashboard', async (req, res) => {
         });
     });
 });
+
+router.get('/dashboard', async (req, res) => {
+    try {
+        const Post = await Post.findAll({
+
+        })
+    }
+})
 
 // Make a route for the logout page where a user can log out and include the necessary req.session code
 router.get('/logout', async (req, res) => {
