@@ -47,7 +47,7 @@ router.get('/dashboard', async (req, res) => {
 router.get('/dashboard', async (req, res) => {
     try {
         const Post = await Post.findAll({
-           return Post
+           
         })
     }
 })
