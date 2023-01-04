@@ -5,7 +5,7 @@ const { Post } = require('../models')
 router.get('/', async (req, res) => {
     try {
         const Post = await Post.findAll({
-            res.remder
+            res.render('homepage')
         });
 
 
@@ -43,10 +43,11 @@ router.get('/dashboard', async (req, res) => {
     });
 });
 
+// Find all posts for the dashboard
 router.get('/dashboard', async (req, res) => {
     try {
         const Post = await Post.findAll({
-
+           return Post
         })
     }
 })
